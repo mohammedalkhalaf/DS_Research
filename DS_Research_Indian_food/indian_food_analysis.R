@@ -168,3 +168,5 @@ indian_food %>%
   theme(aspect.ratio = 1,
         axis.line = element_blank())+
   coord_cartesian(xlim = c(0,300), ylim = c(0,125), expand = 0, clip = "off")
+
+write.csv(indian_food_tidy,"indian_food_tidy.csv", row.names = FALSE)
